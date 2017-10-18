@@ -102,12 +102,12 @@ def display_room(room):
     Note: <BLANKLINE> here means that doctest should expect a blank line.
     """
     # Display room name
-    print()
+    print("")
     print(room["name"].upper())
-    print()
+    print("")
     # Display room description
     print(room["description"])
-    print()
+    print("")
     
 def exit_leads_to(exits, direction):
     """This function takes a dictionary of exits and a direction (a particular
@@ -248,7 +248,7 @@ def menu(exits):
         if (is_valid_exit(exits, user_input) == True):
             return user_input
         else:
-            print "I no understand errrrm"
+            print "Din't quite get that"
             pass #loop around until a valid choice is made
 
 
