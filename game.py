@@ -36,7 +36,7 @@ def remove_punct(text):
             elif character != char and char == 'Z':  # elif not needed but ...
                 pass
 
-    return new_string.lower()
+    return new_string
     
     
 def remove_spaces(text):
@@ -76,7 +76,7 @@ def normalise_input(user_input):
     result = remove_spaces(result)
 
 
-    return result
+    return result.lower()
 
 
     
@@ -248,7 +248,7 @@ def menu(exits):
         if (is_valid_exit(exits, user_input) == True):
             return user_input
         else:
-            print "Din't quite get that"
+            print ("Din't quite get that")
             pass #loop around until a valid choice is made
 
 
